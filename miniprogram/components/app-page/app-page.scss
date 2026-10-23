@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+.app-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: var(--app-color-text);
+  background: var(--app-color-background);
+}
+
+.app-page__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-page__safe-area {
+  flex-shrink: 0;
+  height: env(safe-area-inset-bottom);
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-page": "/components/app-page/app-page",
+    "page-state": "/components/page-state/page-state"
+  }
+}

@@ -1,0 +1,21 @@
+<view class="page-state custom-class">
+  <view wx:if="{{ state === 'loading' }}" class="page-state__feedback">
+    <t-loading theme="circular" size="40rpx" text="{{ loadingText }}" />
+  </view>
+  <view wx:elif="{{ state === 'empty' }}" class="page-state__feedback">
+    <t-empty icon="info-circle" description="{{ emptyText }}" />
+  </view>
+  <view wx:elif="{{ state === 'error' }}" class="page-state__feedback">
+    <t-result theme="error" title="{{ errorTitle }}" description="{{ errorDescription }}" />
+    <view class="page-state__retry">
+      <t-button theme="primary" variant="outline" size="small" bind:tap="onRetry">{{ retryText }}</t-button>
+    </view>
+  </view>
+  <view
+    wx:if="{{ keepAlive || state === 'content' }}"
+    class="{{ state === 'content' ? '' : 'page-state__hidden' }}"
+    hidden="{{ state !== 'content' }}"
+  >
+    <slot />
+  </view>
+</view>

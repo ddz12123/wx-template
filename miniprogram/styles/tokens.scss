@@ -1,0 +1,29 @@
+page {
+  --app-color-primary: #0052d9;
+  --app-color-background: #f5f5f5;
+  --app-color-surface: #fff;
+  --app-color-text: #1f1f1f;
+  --app-color-text-secondary: #666;
+  --app-color-border: #e7e7e7;
+  --app-color-error: #e34d59;
+
+  --app-space-xs: 8rpx;
+  --app-space-sm: 16rpx;
+  --app-space-md: 24rpx;
+  --app-space-lg: 32rpx;
+  --app-space-xl: 48rpx;
+  --app-radius-sm: 8rpx;
+  --app-radius-md: 16rpx;
+
+  --app-z-index-bottom-action: 10;
+
+  --td-brand-color: var(--app-color-primary);
+  --td-bg-color-page: var(--app-color-background);
+  --td-bg-color-container: var(--app-color-surface);
+  --td-text-color-primary: var(--app-color-text);
+  --td-text-color-secondary: var(--app-color-text-secondary);
+  --td-border-level-1-color: var(--app-color-border);
+  --td-error-color: var(--app-color-error);
+  --td-radius-small: var(--app-radius-sm);
+  --td-radius-default: var(--app-radius-md);
+}

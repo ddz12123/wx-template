@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--app-space-sm);
+  padding: var(--app-space-lg);
+  box-sizing: border-box;
+  color: var(--app-color-text-secondary);
+  font-size: 24rpx;
+  line-height: 1.5;
+}

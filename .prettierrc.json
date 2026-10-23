@@ -1,0 +1,17 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "plugins": ["@tofrankie/prettier-plugin-wxml"],
+  "overrides": [
+    {
+      "files": "**/*.wxml",
+      "options": {
+        "parser": "wxml"
+      }
+    }
+  ]
+}

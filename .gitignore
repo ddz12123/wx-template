@@ -1,0 +1,64 @@
+# 依赖
+node_modules/
+
+# 微信开发者工具「构建 npm」产物，随构建生成
+miniprogram/miniprogram_npm/
+miniprogram_npm/
+
+# 开发者工具本地私有配置（每人不同，不应入库）
+project.private.config.json
+
+# husky 运行时生成文件（.husky 下的钩子脚本需要入库）
+.husky/_/
+
+# 编辑器 / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+
+# 本地工具状态目录
+.mimosa/
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 构建 / 缓存
+*.tsbuildinfo
+.eslintcache
+.cache/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 测试与覆盖率
+coverage/
+.nyc_output/
+
+# 本地环境变量（模板内 env.ts 需要入库，这里只忽略个人覆盖文件）
+.env
+.env.*
+!.env.example
+*.local
+
+# 临时与测试文件（避免误提交）
+tmp/
+temp/
+.tmp/
+.tmp*
+tmp-*/
+*.tmp
+*.bak
+*.orig
+
+# 压缩包 / 产物
+*.zip
+*.tar.gz
+*.tgz

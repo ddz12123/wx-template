@@ -1,0 +1,14 @@
+<view wx:if="{{ state !== 'idle' || idleText }}" class="load-more custom-class">
+  <text wx:if="{{ state === 'idle' && idleText }}">{{ idleText }}</text>
+  <t-loading
+    wx:elif="{{ state === 'loading' }}"
+    theme="circular"
+    size="32rpx"
+    text="{{ loadingText }}"
+  />
+  <text wx:elif="{{ state === 'finished' }}">{{ finishedText }}</text>
+  <block wx:elif="{{ state === 'error' }}">
+    <text>{{ errorText }}</text>
+    <t-button theme="primary" variant="outline" size="small" bind:tap="onRetry">{{ retryText }}</t-button>
+  </block>
+</view>

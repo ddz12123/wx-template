@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.page-state__feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--app-space-xl) var(--app-space-lg);
+  box-sizing: border-box;
+}
+
+.page-state__retry {
+  margin-top: var(--app-space-lg);
+}
+
+.page-state__hidden {
+  display: none;
+}

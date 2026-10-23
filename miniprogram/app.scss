@@ -1,0 +1,11 @@
+@use './styles/tokens';
+@use './styles/utilities';
+
+page {
+  min-height: 100%;
+  background: var(--app-color-background);
+  color: var(--app-color-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-size: 28rpx;
+  line-height: 1.5;
+}

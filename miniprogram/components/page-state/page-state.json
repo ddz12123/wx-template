@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-loading": "tdesign-miniprogram/loading/loading",
+    "t-empty": "tdesign-miniprogram/empty/empty",
+    "t-result": "tdesign-miniprogram/result/result",
+    "t-button": "tdesign-miniprogram/button/button"
+  }
+}

@@ -1,0 +1,30 @@
+// App-level classes style page-owned nodes, including nodes passed into slots.
+// Isolated component internals use their own styles or declared external classes.
+.u-page-padding {
+  padding: var(--app-space-lg);
+  box-sizing: border-box;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-flex-1 {
+  flex: 1;
+  min-width: 0;
+}
+
+.u-text-secondary {
+  color: var(--app-color-text-secondary);
+}
+
+.u-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

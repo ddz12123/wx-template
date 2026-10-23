@@ -1,0 +1,13 @@
+<view
+  class="bottom-action__placeholder"
+  style="height: {{ height }}px;"
+  aria-hidden="{{ true }}"
+/>
+<view
+  class="bottom-action__panel {{ safeAreaBottom ? 'bottom-action__panel--safe' : '' }} custom-class"
+>
+  <!-- Keep slot content in normal flow; style it in its owning page/component. -->
+  <view class="bottom-action__content content-class">
+    <slot />
+  </view>
+</view>

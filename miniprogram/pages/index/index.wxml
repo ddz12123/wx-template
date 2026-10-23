@@ -1,0 +1,7 @@
+<app-page title="首页">
+  <page-state state="{{ state }}" bind:retry="onRetry">
+    <view class="u-page-padding">
+      <text>模板运行正常（{{ now }}）</text>
+    </view>
+  </page-state>
+</app-page>

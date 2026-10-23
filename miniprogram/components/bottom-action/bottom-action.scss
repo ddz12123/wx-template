@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+.bottom-action__placeholder {
+  flex-shrink: 0;
+}
+
+.bottom-action__panel {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: var(--app-z-index-bottom-action);
+  box-sizing: border-box;
+  background: var(--app-color-surface);
+  border-top: 1rpx solid var(--app-color-border);
+}
+
+.bottom-action__panel--safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bottom-action__content {
+  padding: var(--app-space-md) var(--app-space-lg);
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["miniprogram-api-typings"],
+    "skipLibCheck": true
+  },
+  "include": ["tests/**/*.ts", "vitest.config.mts", "typings/**/*.d.ts"],
+  "exclude": ["node_modules", "miniprogram"]
+}

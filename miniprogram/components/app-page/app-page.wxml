@@ -1,0 +1,16 @@
+<view class="app-page custom-class">
+  <t-navbar
+    wx:if="{{ showNavbar }}"
+    title="{{ showTitle ? title : '' }}"
+    left-arrow="{{ showBack }}"
+    delta="{{ 0 }}"
+    fixed="{{ fixed }}"
+    placeholder="{{ fixed }}"
+    animation="{{ false }}"
+    bind:go-back="onBack"
+  />
+  <view class="app-page__content content-class">
+    <slot />
+  </view>
+  <view wx:if="{{ safeAreaBottom }}" class="app-page__safe-area" />
+</view>
