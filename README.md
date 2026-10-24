@@ -11,7 +11,7 @@
 - ESLint（typescript-eslint flat config）+ Prettier（含 WXML）
 - Vitest 单元测试（纯逻辑模块全覆盖，wx API 用内存替身，不依赖开发者工具）
 - husky + lint-staged（提交前自动格式化；`npm run check` 做全量校验）
-- GitHub Actions CI（push / PR 自动跑 `npm run check`）
+- GitHub Actions CI（手动触发：Actions 页面点 Run workflow，跑 `npm run check`）
 
 ## 快速开始
 
@@ -75,7 +75,7 @@ tests/              # Vitest 单元测试（目录结构与 miniprogram 镜像�
 └─ utils/           # storage、router、timing、date、events 的行为测试
 docs/
 └─ pages-packages-tabs.md # 新增页面/分包/TabBar 操作手册
-.github/workflows/ci.yml  # CI：push / PR 跑 npm run check
+.github/workflows/ci.yml  # CI：手动触发跑 npm run check
 .husky/
 └─ pre-commit       # 提交前由 lint-staged 格式化暂存文件
 ```
